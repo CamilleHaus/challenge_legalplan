@@ -1,0 +1,48 @@
+.header {
+    max-width: 1300px;
+    margin-inline: auto;
+    padding-bottom: 24px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 1px solid #D7DDE9;
+    margin-top: 10px;
+    
+
+    @media (max-width: 430px) {
+        max-width: 365px;
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+
+        align-items: flex-start;
+        gap: 10px;
+
+        margin-top: 10px;
+      }
+
+
+    &__welcome {
+        width: 298px;
+        font-size: 24px;
+        font-weight: 500;
+
+        @media (max-width: 430px) {
+            font-size: 16px;
+          }
+    }
+
+    &__date {
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    &__logos {
+        display: flex;
+        width: 250px;
+        align-items: center;
+    }
+}
